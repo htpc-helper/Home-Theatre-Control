@@ -51,7 +51,7 @@ Subsequent to the implementation of this project, a [FLIRC](flirc.tv) device was
 As the Raspberry Pi in this project operates both an infrared receiver and transmitter diode, it can be configured to receive signals from an infrared remote control and retransmit them to different devices. I have used this to allow my stereo system remote control, manufactured by Pioneer, to power off the TV, manufactured by Samsung, for instances where I wish to power off the TV but leave the HTPC on for other tasks. Documentation relating to this configuration is beyond the scope of this article.
 
 ##Final Thoughts
-I have recently implemented the fantastic open source home automation software [Home Assistant](https://home-assistant.io) which duplicates some of the functionality of this project. I intend on retaining the Home Theatre Control in my living room even if I do not use it every day as it is useful when I have visitors with poor digital literacy skills, or whom I do not wish to grant access to the greater functionality implemented in Home Assistant.
+I have recently implemented the fantastic open source home automation software [Home Assistant](https://home-assistant.io) which duplicates some of the functionality of this project. I intend on retaining the Home Theatre Control in my living room even if I do not use it every day as it is useful when I have visitors with poor digital literacy skills, or whom I do not wish to grant access to the greater functionality available in Home Assistant.
 
 ##References
 http://alexba.in/blog/2013/03/09/raspberrypi-ir-schematic-for-lirc/
