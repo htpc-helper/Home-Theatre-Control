@@ -33,19 +33,25 @@ The software accepts input from buttons connected to the Pi’s GPIO pins, and c
 - Save the file buttons.init as /etc/init.d/buttons
 - Update the DAEMON variable to the location of the buttons.py script (note: the script has to run as root to allow access to the GPIO pins)
 - Enable the init script at startup
-    sudo update-rc.d buttons defaults
+```
+sudo update-rc.d buttons defaults
+```
 - Start the script
-    Sudo service buttons start
+```
+sudo service buttons start
+```
 - Check for error messages
-    Sudo service buttons status
+```
+sudo service buttons status
+```
 
 ##Further Work
 Subsequent to the implementation of this project, a [FLIRC](flirc.tv) device was configured to allow an infrared remote control for a stereo system to control navigation of the program running on the HTPC. This allows a single remote control to provide power and volume controls for the stereo, as well as navigation controls for the HTPC.
 
 As the Raspberry Pi in this project operates both an infrared receiver and transmitter diode, it can be configured to receive signals from an infrared remote control and retransmit them to different devices. I have used this to allow my stereo system remote control, manufactured by Pioneer, to power off the TV, manufactured by Samsung, for instances where I wish to power off the TV but leave the HTPC on for other tasks. Documentation relating to this configuration is beyond the scope of this article.
 
-##Final Thoughts etc
-I have recently implemented the fantastic open source home automation software [Home Assistant](https://home-assistant.io) which duplicates some of the functionality of this project. I intend on retaining the Home Theatre Control in my living room even if I do not use it every day as it is useful when I have visitors with poor digital literacy skills, or who I do not wish to grant access to larger functionality implemented in Home Assistant.
+##Final Thoughts
+I have recently implemented the fantastic open source home automation software [Home Assistant](https://home-assistant.io) which duplicates some of the functionality of this project. I intend on retaining the Home Theatre Control in my living room even if I do not use it every day as it is useful when I have visitors with poor digital literacy skills, or whom I do not wish to grant access to the greater functionality implemented in Home Assistant.
 
 ##References
 http://alexba.in/blog/2013/03/09/raspberrypi-ir-schematic-for-lirc/
